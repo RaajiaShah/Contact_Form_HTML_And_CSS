@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Raajia Shah" />
+    
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+   
+    <!-- StyleSheet -->
+    <link rel="stylesheet" href="css/style.css" type="text/css" media="all" />
+    <!-- Document Title -->
+    <title>Contact Form | Html5 & Css3 Template</title>
+</head>
+<body>
+    <!-- === THIS IS A FORM SECTION === -->
+
+    <!-- Begin DIV #contact-form -->
+    <div id="contact-form">
+        
+        <!-- Header -->
+        <header id="header">
+            <h1>Contact Us</h1>
+        </header>
+        <!-- End Header -->
+
+        <!-- Form -->
+        <form id="form" action="#" onsubmit="ValidateForm(event);">
+            <h3>Your Name*</h3>
+            
+            <!-- Begin div .f-n -->
+            <div class="f-n">
+                <input type="text" id="inpf" pattern="[a-zA-Z0-9]+" placeholder="First Name" required="" />
+                <input type="text" id="inpl" pattern="[a-zA-Z0-9]+" placeholder="Last Name" required="" />
+            </div>
+            <!-- end div .f-n -->
+
+            <h3>Email Address*</h3>
+            <input type="email" id="email" placeholder="Email Address" required="" />
+            <h3>Select Image*</h3>
+            
+            <!-- Label tag associated with input type="file" -->
+            <label for="select-img" class="select-img-lbl">Choose Image</label>
+            <input type="file" id="select-img" onchange="show_img(event);">
+            
+              <!-- Begin div #display-img -->
+            <div id="display-img">
+                <img id="prev-img" />
+            </div>
+              <!-- end div #display-img -->
+
+            <h3>Message*</h3>
+            <textarea id="message" placeholder="Message:"></textarea>
+            
+            <!-- Button -->
+            <input type="submit" class="submit" value="Submit" />
+        </form>
+        <!-- End FORM -->
+
+    </div>
+    <!-- End DIV #contact-form -->
+
+    <!-- === END FORM SECTION === -->
+    
+
+    <!--*/*/*/*/*/*/*/*/*/*/*/*/*/*-->
+    
+
+    <!-- === THIS IS A USER INFORMATION SECTION  === -->
+
+    <!-- Begin DIV #user-data -->
+    <div id="user-data">
+        <p id="result"></p>
+        
+        <!-- Title -->
+        <h4 id="user-info-heading">Your Information</h4>
+
+        <!-- Begin div #user-info-box -->
+        <div id="user-info-box">
+            <p class="user-info-text"></p>
+        </div>
+        <!-- end div #user-info-box -->
+    </div>
+    <!-- End DIV #user-data -->
+
+    <!-- == END USER INFORMATION SECTION== -->
+
+
+    <!-- JavaScript -->
+    <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,188 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    background: white;
+}
+
+/* === FORM SECTION === */
+
+/* Begin DIV #contact-form */
+
+#contact-form {
+    margin: 50px auto;
+}
+
+/* Begin #contact-form inner */
+
+#header {
+    text-align: center;
+    color: white;
+    background: orange;
+    padding: 20px;
+    width: 350px;
+}
+
+/* Begin Form #form */
+
+#form {
+    margin: auto;
+    display: grid;
+    background: #0d0d2d;
+    padding: 42px;
+    width: 350px;
+}
+
+h3 {
+    color: #fff;
+    margin-top: 18px;
+    font-weight: bold;
+}
+
+h3:first-of-type{
+    margin-top: 5px;
+}
+
+.f-n {
+    display: flex;
+}
+
+#inpf,#inpl,#email {
+    border: none;
+    border-bottom: 2px solid orange;
+    background: #0d0d2d;
+    color: white;
+    margin-top: 3px;
+    margin-right: 6px;
+    margin-bottom: 9px;
+    width: 133px;
+    padding: 12px;
+}
+
+#email {
+    width: 270px;
+    padding: 12px;
+}
+
+#select-img {
+    display: none;
+    margin-top: 12px;
+    margin-bottom: 20px;
+}
+
+label.select-img-lbl {
+    width: 120px;
+    padding: 5px;
+    color: white;
+    background: orange;
+    font-size: 11px;
+    cursor: pointer;
+}
+
+label.select-img-lbl:hover{
+    background: rgb(255, 153, 0);
+    color: beige;
+}
+
+#prev-img {
+    display: none;
+    width: 50px;
+    height: 50px;
+    background-size: 90px;
+}
+
+#display-img {
+    margin-top: 5px;
+    width: 50px;
+    height: 50px;
+    display: none;
+}
+
+textarea {
+    resize: none;
+    background: transparent;
+    border: 2px solid orange;
+    color: white;
+    margin-top: 3px;
+    margin-bottom: 5px;
+    padding: 26px;
+    width: 270px;
+    font-size: 12px;
+}
+
+/* Submit Button */
+
+.submit {
+    background: orange;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 14px;
+    width: 170px;
+    border-radius: 49px;
+    border: none;
+    margin-top: 15px;
+    align-items: center;
+    justify-self: center;
+    cursor: pointer;
+}
+
+.submit:hover {
+    background: rgb(255, 153, 0);
+    color: beige;
+}
+
+/* end form #form */
+
+/* End DIV #contact-form */
+
+
+
+/* === USER INFORMATION SECTION === */
+
+/* Begin DIV #user-data */
+
+#user-data {
+    display: grid;
+    padding: 42px;
+    width: 300px;
+    display: none;
+    margin: auto;
+}
+
+#result {
+    color: orange;
+    margin-top: 0px;
+    text-align: center;
+    margin-bottom: 70px;
+}
+
+#user-info-heading {
+    background-color: orange;
+    color: white;
+    width: 300px;
+    padding: 10px;
+    text-align: center;
+}
+
+#user-info-box {
+    background: #0d0d2d;
+    color: orange;
+    word-wrap: break-word;
+    padding: 26px;
+    width: 300px;
+    text-align: center;
+}
+
+.user-info-text {
+
+    text-align: center;
+    font-size: 13px;
+    color: orange;
+}
+
+/* End DIV #user-data */
